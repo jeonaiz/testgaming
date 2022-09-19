@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testgaming.MainController">
+   <children>
+      <TextField fx:id="txtQuestion" layoutX="114.0" layoutY="63.0" prefHeight="25.0" prefWidth="186.0" />
+      <TextField fx:id="txtAnswer" layoutX="332.0" layoutY="63.0" prefHeight="25.0" prefWidth="123.0" />
+      <Label layoutX="308.0" layoutY="60.0" text="=">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonResult" layoutX="431.0" layoutY="112.0" mnemonicParsing="false" onAction="#buttonOnClicked" prefHeight="31.0" prefWidth="84.0" text="Дальше" />
+      <Label fx:id="lblResult" layoutX="366.0" layoutY="246.0" text="Результат:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonNewGame" layoutX="235.0" layoutY="153.0" mnemonicParsing="false" onAction="#onButtonClickedNewGame" prefHeight="47.0" prefWidth="112.0" text="Новая игра!" />
+   </children>
+</AnchorPane>
